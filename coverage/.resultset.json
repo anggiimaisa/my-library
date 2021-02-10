@@ -1,0 +1,27 @@
+{
+  "RSpec": {
+    "coverage": {
+      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/book_rspec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/model/book.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1612951435
+  }
+}
