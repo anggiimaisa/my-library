@@ -9,9 +9,9 @@ class Book
   end
 
   def valid?
-    return false if !isbn_valid?
-    return false if !title_valid?
-    return false if !author_valid?
+    return false unless isbn_valid?
+    return false unless title_valid?
+    return false unless author_valid?
 
     true
   end
