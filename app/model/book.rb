@@ -1,4 +1,3 @@
-
 class Book
   attr_accessor :isbn, :title, :author
 
@@ -8,12 +7,20 @@ class Book
     @author = author
   end
 
+  # def find_by_title(book_shelf, title)
+  #   book_shelf.find_all.filter { |book| book.title.include? title }
+  # end
+
   def valid?
     return false unless isbn_valid?
     return false unless title_valid?
     return false unless author_valid?
 
     true
+  end
+
+  def print
+    "#{@isbn} | #{@title} | #{@author}"
   end
 
   private
