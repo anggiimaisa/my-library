@@ -1,15 +1,11 @@
 class Book
-  attr_accessor :isbn, :title, :author
+  attr_reader :isbn, :title, :author
 
   def initialize(isbn = '', title = '', author = '')
     @isbn = isbn
     @title = title
     @author = author
   end
-
-  # def find_by_title(book_shelf, title)
-  #   book_shelf.find_all.filter { |book| book.title.include? title }
-  # end
 
   def valid?
     return false unless isbn_valid?
