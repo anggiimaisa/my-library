@@ -15,6 +15,14 @@ class Book
     true
   end
 
+  def empty?
+    return false if isbn_valid?
+    return false if title_valid?
+    return false if author_valid?
+
+    true
+  end
+
   def print
     "#{@isbn} | #{@title} | #{@author}"
   end
@@ -27,18 +35,17 @@ class Book
 
     true
   end
-
   def title_valid?
     return false if @title.nil?
     return false if @title.eql? ''
 
     true
   end
-
   def author_valid?
     return false if @author.nil?
     return false if @author.eql? ''
 
     true
   end
+
 end

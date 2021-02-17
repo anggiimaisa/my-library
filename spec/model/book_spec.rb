@@ -7,14 +7,28 @@ describe 'Book' do
   let(:author) { 'J. K. Rowling' }
 
   context 'check existence of Book data' do
-    it 'should return false if book is empty' do
-      book = Book.new
-      expect(book.valid?).to eq(false)
+    context 'valid?' do
+      it 'should return false if book is empty' do
+        book = Book.new
+        expect(book.valid?).to eq(false)
+      end
+
+      it 'should return true if book is not empty' do
+        book = Book.new(:isbn, :title, :author)
+        expect(book.valid?).to eq(true)
+      end
     end
 
-    it 'should return true if book is not empty' do
-      book = Book.new(:isbn, :title, :author)
-      expect(book.valid?).to eq(true)
+    context 'empty?' do
+      it 'should return true if book is empty' do
+        book = Book.new
+        expect(book.empty?).to eq(true)
+      end
+
+      it 'should return false if book is not empty' do
+        book = Book.new(:isbn, :title, :author)
+        expect(book.empty?).to eq(false)
+      end
     end
 
     it 'verify print book format' do
