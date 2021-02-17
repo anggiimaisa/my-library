@@ -35,17 +35,18 @@ class Book
 
     true
   end
+
   def title_valid?
     return false if @title.nil?
     return false if @title.eql? ''
 
     true
   end
+
   def author_valid?
     return false if @author.nil?
     return false if @author.eql? ''
 
     true
   end
-
 end
