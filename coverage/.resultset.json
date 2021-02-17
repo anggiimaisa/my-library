@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/book_rspec.rb": {
+      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/book_spec.rb": {
         "lines": [
           1,
           null,
@@ -43,10 +43,6 @@
           3,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
           1,
           2,
           1,
@@ -85,6 +81,6 @@
         ]
       }
     },
-    "timestamp": 1613500863
+    "timestamp": 1613555415
   }
 }
