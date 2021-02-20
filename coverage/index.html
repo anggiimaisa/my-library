@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-21T01:33:05+07:00">2021-02-21T01:33:05+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-21T02:12:58+07:00">2021-02-21T02:12:58+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.66
+         1.61
        </span>
     </span> hits/line
     )
@@ -71,24 +71,24 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#2cbd2c1d9ba85d11e398df1578c0454e86e32c53" class="src_link" title="app/model/shelf.rb">app/model/shelf.rb</a></td>
+            <td class="strong t-file__name"><a href="#9e48cd31b8c224f769026492b97382f162fae559" class="src_link" title="app/model/book.rb">app/model/book.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">58</td>
-            <td class="cell--number">36</td>
-            <td class="cell--number">36</td>
+            <td class="cell--number">52</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">31</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.03</td>
+            <td class="cell--number">1.81</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#ef4dd8117f31342b18f4faa8a01e966db882aedb" class="src_link" title="spec/model/shelf_spec.rb">spec/model/shelf_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#0dbe88b957aa95d9d84123623af4bcaee422d08b" class="src_link" title="spec/model/book_spec.rb">spec/model/book_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">32</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">20</td>
+            <td class="cell--number">41</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">25</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.36</td>
             
           </tr>
         
@@ -109,9 +109,9 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="2cbd2c1d9ba85d11e398df1578c0454e86e32c53">
+        <div class="source_table" id="9e48cd31b8c224f769026492b97382f162fae559">
   <div class="header">
-    <h3>app/model/shelf.rb</h3>
+    <h3>app/model/book.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -123,8 +123,8 @@
     
 
     <div class="t-line-summary">
-      <b>36</b> relevant lines.
-      <span class="green"><b>36</b> lines covered</span> and
+      <b>31</b> relevant lines.
+      <span class="green"><b>31</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -142,7 +142,7 @@
 
             
 
-            <code class="ruby">class Shelf</code>
+            <code class="ruby">class Book</code>
           </li>
         </div>
       
@@ -153,7 +153,7 @@
 
             
 
-            <code class="ruby">  attr_reader :shelf_id, :row_id, :column_id</code>
+            <code class="ruby">  attr_reader :isbn, :title, :author</code>
           </li>
         </div>
       
@@ -175,7 +175,7 @@
 
             
 
-            <code class="ruby">  def initialize(shelf_id, row_id, column_id)</code>
+            <code class="ruby">  def initialize(isbn = &#39;&#39;, title = &#39;&#39;, author = &#39;&#39;)</code>
           </li>
         </div>
       
@@ -186,7 +186,7 @@
 
             
 
-            <code class="ruby">    @shelf_id = shelf_id</code>
+            <code class="ruby">    @isbn = isbn</code>
           </li>
         </div>
       
@@ -197,7 +197,7 @@
 
             
 
-            <code class="ruby">    @row_id = row_id</code>
+            <code class="ruby">    @title = title</code>
           </li>
         </div>
       
@@ -208,7 +208,7 @@
 
             
 
-            <code class="ruby">    @column_id = column_id</code>
+            <code class="ruby">    @author = author</code>
           </li>
         </div>
       
@@ -246,24 +246,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="11">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    return false unless shelf_id_valid?</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="12">
+          <li class="covered" data-hits="2" data-linenumber="11">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    return false unless row_id_valid?</code>
+            <code class="ruby">    return false unless isbn_valid?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    return false unless title_valid?</code>
           </li>
         </div>
       
@@ -274,7 +274,7 @@
 
             
 
-            <code class="ruby">    return false unless column_id_valid?</code>
+            <code class="ruby">    return false unless author_valid?</code>
           </li>
         </div>
       
@@ -329,7 +329,7 @@
 
             
 
-            <code class="ruby">  def print</code>
+            <code class="ruby">  def empty?</code>
           </li>
         </div>
       
@@ -340,56 +340,34 @@
 
             
 
-            <code class="ruby">    shelf_id = convert_to_str(@shelf_id)</code>
+            <code class="ruby">    return false if isbn_valid?</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="20">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    row_id = convert_to_str(@row_id)</code>
+            <code class="ruby">    return false if title_valid?</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="21">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    column_id = convert_to_str(@column_id)</code>
+            <code class="ruby">    return false if author_valid?</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="22">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    &quot;#{shelf_id}#{row_id}#{column_id}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
@@ -400,24 +378,46 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="25">
+          <li class="covered" data-hits="1" data-linenumber="23">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">    true</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def print</code>
           </li>
         </div>
       
@@ -428,40 +428,40 @@
 
             
 
-            <code class="ruby">  def shelf_id_valid?</code>
+            <code class="ruby">    &quot;#{@isbn} | #{@title} | #{@author}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="28">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="28">
+            
             
 
             
 
-            <code class="ruby">    return false if @shelf_id.nil?</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="29">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="29">
+            
             
 
             
 
-            <code class="ruby">    return false if @shelf_id.eql? &#39;&#39;</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="30">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    return false if @shelf_id.to_i &gt; 99</code>
+            <code class="ruby">  private</code>
           </li>
         </div>
       
@@ -477,46 +477,46 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="32">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    true</code>
+            <code class="ruby">  def isbn_valid?</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="33">
-            
-            
-
+          <li class="covered" data-hits="4" data-linenumber="33">
+            <span class="hits">4</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    return false if @isbn.nil?</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="34">
+          <li class="covered" data-hits="4" data-linenumber="34">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    return false if @isbn.eql? &#39;&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def row_id_valid?</code>
           </li>
         </div>
       
@@ -527,34 +527,23 @@
 
             
 
-            <code class="ruby">    return false if @row_id.nil?</code>
+            <code class="ruby">    true</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="37">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="37">
+            
             
 
             
 
-            <code class="ruby">    return false if @row_id.eql? &#39;&#39;</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="38">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    return false if @row_id.to_i &gt; 99</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="39">
+          <li class="never" data-hits="" data-linenumber="38">
             
             
 
@@ -565,24 +554,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
+          <li class="covered" data-hits="1" data-linenumber="39">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    true</code>
+            <code class="ruby">  def title_valid?</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="41">
+          <li class="covered" data-hits="2" data-linenumber="40">
+            <span class="hits">2</span>
             
+
+            
+
+            <code class="ruby">    return false if @title.nil?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="41">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    return false if @title.eql? &#39;&#39;</code>
           </li>
         </div>
       
@@ -604,29 +604,29 @@
 
             
 
-            <code class="ruby">  def column_id_valid?</code>
+            <code class="ruby">    true</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="44">
+            
             
 
             
 
-            <code class="ruby">    return false if @column_id.nil?</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="45">
+            
             
 
             
 
-            <code class="ruby">    return false if @column_id.eql? &#39;&#39;</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -637,29 +637,29 @@
 
             
 
-            <code class="ruby">    return false if @column_id.to_i &gt; 99</code>
+            <code class="ruby">  def author_valid?</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="47">
+            <span class="hits">2</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    return false if @author.nil?</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="48">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="48">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    true</code>
+            <code class="ruby">    return false if @author.eql? &#39;&#39;</code>
           </li>
         </div>
       
@@ -670,78 +670,23 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="50">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="51">
+          <li class="covered" data-hits="1" data-linenumber="50">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def convert_to_str(num)</code>
+            <code class="ruby">    true</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="52">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">    if num.to_i &lt; 10</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="53">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">      return &quot;0#{num}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="54">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="55">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    num</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="56">
+          <li class="never" data-hits="" data-linenumber="51">
             
             
 
@@ -752,18 +697,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="never" data-hits="" data-linenumber="52">
             
             
 
@@ -778,9 +712,9 @@
 </div>
 
       
-        <div class="source_table" id="ef4dd8117f31342b18f4faa8a01e966db882aedb">
+        <div class="source_table" id="0dbe88b957aa95d9d84123623af4bcaee422d08b">
   <div class="header">
-    <h3>spec/model/shelf_spec.rb</h3>
+    <h3>spec/model/book_spec.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -792,8 +726,8 @@
     
 
     <div class="t-line-summary">
-      <b>20</b> relevant lines.
-      <span class="green"><b>20</b> lines covered</span> and
+      <b>25</b> relevant lines.
+      <span class="green"><b>25</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -811,7 +745,7 @@
 
             
 
-            <code class="ruby">require &#39;./app/model/shelf&#39;</code>
+            <code class="ruby">require &#39;./app/model/book&#39;</code>
           </li>
         </div>
       
@@ -833,51 +767,51 @@
 
             
 
-            <code class="ruby">describe Shelf do</code>
+            <code class="ruby">describe &#39;Book&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="4" data-linenumber="4">
+            <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">  context &#39;check existence of Shelf data&#39; do</code>
+            <code class="ruby">  let(:isbn) { &quot;9780747532743&quot; }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="4" data-linenumber="5">
+            <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">    context &#39;valid?&#39; do</code>
+            <code class="ruby">  let(:title) { &quot;Harry Potter 1&quot; }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="4" data-linenumber="6">
+            <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">      it &#39;should return false if shelf is empty&#39; do</code>
+            <code class="ruby">  let(:author) { &quot;J. K. Rowling&quot; }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="7">
+            
             
 
             
 
-            <code class="ruby">        shelf = Shelf.new(&#39;&#39;, &#39;&#39;, &#39;&#39;)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -888,29 +822,29 @@
 
             
 
-            <code class="ruby">        expect(shelf.valid?).to eq(false)</code>
+            <code class="ruby">  context &#39;check existence of Book data&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      end</code>
+            
+
+            <code class="ruby">    context &#39;valid?&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      it &#39;should return false if book is empty&#39; do</code>
           </li>
         </div>
       
@@ -921,7 +855,7 @@
 
             
 
-            <code class="ruby">      it &#39;should return true if shelf is not empty&#39; do</code>
+            <code class="ruby">        book = Book.new</code>
           </li>
         </div>
       
@@ -932,18 +866,18 @@
 
             
 
-            <code class="ruby">        shelf = Shelf.new(&#39;01&#39;, &#39;02&#39;, &#39;01&#39;)</code>
+            <code class="ruby">        expect(book.valid?).to eq(false)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="13">
+            
             
 
             
 
-            <code class="ruby">        expect(shelf.valid?).to eq(true)</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -954,18 +888,18 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      it &#39;should return true if book is not empty&#39; do</code>
           </li>
         </div>
       
@@ -976,7 +910,7 @@
 
             
 
-            <code class="ruby">      it &#39;should return false if shelf attribute more than 100&#39; do</code>
+            <code class="ruby">        book = Book.new(isbn, title, author)</code>
           </li>
         </div>
       
@@ -987,23 +921,12 @@
 
             
 
-            <code class="ruby">        shelf = Shelf.new(&#39;01&#39;, &#39;201&#39;, &#39;01&#39;)</code>
+            <code class="ruby">        expect(book.valid?).to eq(true)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(shelf.valid?).to eq(false)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -1014,7 +937,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -1025,13 +948,24 @@
         </div>
       
         <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="21">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    context &#39;print&#39; do</code>
+            <code class="ruby">    context &#39;empty?&#39; do</code>
           </li>
         </div>
       
@@ -1042,7 +976,7 @@
 
             
 
-            <code class="ruby">      it &#39;should return double digit if number less than 10&#39; do</code>
+            <code class="ruby">      it &#39;should return true if book is empty&#39; do</code>
           </li>
         </div>
       
@@ -1053,7 +987,7 @@
 
             
 
-            <code class="ruby">        shelf = Shelf.new(1,1,1)</code>
+            <code class="ruby">        book = Book.new</code>
           </li>
         </div>
       
@@ -1064,7 +998,7 @@
 
             
 
-            <code class="ruby">        expect(shelf.print).to eq(&#39;010101&#39;)</code>
+            <code class="ruby">        expect(book.empty?).to eq(true)</code>
           </li>
         </div>
       
@@ -1080,13 +1014,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="26">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="26">
+            
             
 
             
 
-            <code class="ruby">      it &#39;should return its number if number more than 10&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1097,7 +1031,7 @@
 
             
 
-            <code class="ruby">        shelf = Shelf.new(12, 13, 14)</code>
+            <code class="ruby">      it &#39;should return false if book is not empty&#39; do</code>
           </li>
         </div>
       
@@ -1108,18 +1042,18 @@
 
             
 
-            <code class="ruby">        expect(shelf.print).to eq(&#39;121314&#39;)</code>
+            <code class="ruby">        book = Book.new(isbn, title, author)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      end</code>
+            
+
+            <code class="ruby">        expect(book.empty?).to eq(false)</code>
           </li>
         </div>
       
@@ -1130,7 +1064,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -1141,12 +1075,111 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;verify print book format&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      book = Book.new(isbn, title, author)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      template = &quot;#{isbn} | #{title} | #{author}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      p template</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="37">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(book.print).to eq(template)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
             
             
 
