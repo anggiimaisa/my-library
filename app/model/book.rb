@@ -1,7 +1,7 @@
 class Book
   attr_reader :isbn, :title, :author
 
-  def initialize(isbn = '', title = '', author = '')
+  def initialize(isbn = '', title = '', author = [])
     @isbn = isbn
     @title = title
     @author = author
@@ -24,7 +24,7 @@ class Book
   end
 
   def print
-    "#{@isbn} | #{@title} | #{@author}"
+    "#{@isbn} | #{@title} | #{@author.join(', ')}"
   end
 
   private
@@ -45,7 +45,7 @@ class Book
 
   def author_valid?
     return false if @author.nil?
-    return false if @author.eql? ''
+    return false if @author.empty?
 
     true
   end
