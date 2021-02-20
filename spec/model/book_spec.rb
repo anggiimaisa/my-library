@@ -1,9 +1,9 @@
 require './app/model/book'
 
 describe 'Book' do
-  let(:isbn) { "9780747532743" }
-  let(:title) { "Harry Potter 1" }
-  let(:author) { ["J. K. Rowling"] }
+  let(:isbn) { '9780747532743' }
+  let(:title) { 'Harry Potter 1' }
+  let(:author) { ['J. K. Rowling'] }
 
   context 'check existence of Book data' do
     context 'valid?' do

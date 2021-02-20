@@ -3,10 +3,10 @@ require './app/model/shelf'
 require './app/model/book'
 
 describe BookShelf do
-  let(:slot_id) { "010101" }
-  let(:isbn) { "9780747532743" }
-  let(:title) { "Harry Potter 1" }
-  let(:author) { ["J. K. Rowling"] }
+  let(:slot_id) { '010101' }
+  let(:isbn) { '9780747532743' }
+  let(:title) { 'Harry Potter 1' }
+  let(:author) { ['J. K. Rowling'] }
 
   context 'print' do
     it 'should return the same value' do
