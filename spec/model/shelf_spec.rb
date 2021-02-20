@@ -9,18 +9,18 @@ describe Shelf do
       end
 
       it 'should return true if shelf is not empty' do
-        shelf = Shelf.new('01', '02', '01')
+        shelf = Shelf.new('1', '2', '1')
         expect(shelf.valid?).to eq(true)
       end
 
       it 'should return false if shelf attribute more than 100' do
-        shelf = Shelf.new('01', '201', '01')
+        shelf = Shelf.new('1', '201', '1')
         expect(shelf.valid?).to eq(false)
       end
     end
     context 'print' do
       it 'should return double digit if number less than 10' do
-        shelf = Shelf.new(1,1,1)
+        shelf = Shelf.new(1, 1, 1)
         expect(shelf.print).to eq('010101')
       end
       it 'should return its number if number more than 10' do
