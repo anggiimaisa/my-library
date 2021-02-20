@@ -23,6 +23,10 @@ describe Shelf do
         shelf = Shelf.new(1,1,1)
         expect(shelf.print).to eq('010101')
       end
+      it 'should return its number if number more than 10' do
+        shelf = Shelf.new(12, 13, 14)
+        expect(shelf.print).to eq('121314')
+      end
     end
   end
 end
