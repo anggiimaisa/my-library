@@ -18,5 +18,11 @@ describe Shelf do
         expect(shelf.valid?).to eq(false)
       end
     end
+    context 'print' do
+      it 'should return double digit if number less than 10' do
+        shelf = Shelf.new(1,1,1)
+        expect(shelf.print).to eq('010101')
+      end
+    end
   end
 end
