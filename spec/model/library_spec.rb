@@ -25,5 +25,11 @@ describe Library do
       book_slot = library.allocate_book(book)
       expect(book_slot.print).to eq('010101')
     end
+    it 'should return the second empty slot when the first is not empty' do
+      library = Library.instance
+      book = Book.new(isbn, title, author)
+      book_slot = library.allocate_book(book)
+      expect(book_slot.print).to eq('010102')
+    end
   end
 end
