@@ -1,5 +1,6 @@
 class BookShelf
-  attr_reader :shelf, :book
+  attr_reader :shelf
+  attr_accessor :book
 
   def initialize(shelf, book = Book.new)
     @shelf = shelf
