@@ -16,4 +16,13 @@ describe BookShelf do
       expect(book_shelf.print).to eq("#{slot_id}: #{isbn} | #{title} | #{author.join(', ')}")
     end
   end
+
+  context 'empty_slot?' do
+    it 'should return true if slot is empty' do
+      shelf = Shelf.new(1, 1, 1)
+      book = Book.new
+      book_shelf = BookShelf.new(shelf, book)
+      expect(book_shelf.empty_slot?).to eq(true)
+    end
+  end
 end
