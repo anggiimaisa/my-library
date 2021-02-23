@@ -24,5 +24,12 @@ describe BookShelf do
       book_shelf = BookShelf.new(shelf, book)
       expect(book_shelf.empty_slot?).to eq(true)
     end
+
+    it 'should return false if slot is not empty' do
+      shelf = Shelf.new(1, 1, 1)
+      book = Book.new(isbn, title, author)
+      book_shelf = BookShelf.new(shelf, book)
+      expect(book_shelf.empty_slot?).to eq(false)
+    end
   end
 end
