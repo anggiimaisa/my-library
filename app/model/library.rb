@@ -28,6 +28,18 @@ class Library
     return 0
   end
 
+  def take_book(shelf)
+    @shelves.each do |book_shelf|
+      if book_shelf.shelf.eql? shelf
+        if !book_shelf.book.empty?
+          book_shelf.book = Book.new
+          return shelf
+        end
+      end
+    end
+    return 0
+  end
+
   def self.instance
     @@instance
   end

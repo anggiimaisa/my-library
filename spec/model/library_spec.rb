@@ -4,6 +4,8 @@ describe Library do
   let(:isbn) { '9780747532743' }
   let(:title) { 'Harry Potter 1' }
   let(:author) { ['J. K. Rowling'] }
+  let(:book) { Book.new(isbn, title, author) }
+  let(:shelf) { Shelf.new(1,1,1) }
 
   context 'instance' do
     it 'should return same object id for 2 instances' do
@@ -21,15 +23,21 @@ describe Library do
   context 'allocate_book' do
     it 'should return the first empty slot' do
       library = Library.instance
-      book = Book.new(isbn, title, author)
       book_slot = library.allocate_book(book)
       expect(book_slot.print).to eq('010101')
     end
     it 'should return the second empty slot when the first is not empty' do
       library = Library.instance
-      book = Book.new(isbn, title, author)
       book_slot = library.allocate_book(book)
       expect(book_slot.print).to eq('010102')
+    end
+  end
+  context 'take_book' do
+    it 'should return shelf' do
+      library = Library.instance
+      library.allocate_book(book)
+      book_slot = library.take_book(shelf)
+      expect(book_slot.print).to eq('010101')
     end
   end
 end

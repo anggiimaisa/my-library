@@ -15,6 +15,12 @@ class Shelf
     true
   end
 
+  def eql? (other)
+    @shelf_id == other.shelf_id &&
+    @row_id == other.row_id &&
+    @column_id == other.column_id
+  end
+
   def print
     shelf_id = convert_to_str(@shelf_id)
     row_id = convert_to_str(@row_id)
