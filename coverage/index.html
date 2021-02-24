@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-24T01:40:53+07:00">2021-02-24T01:40:53+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-25T00:36:09+07:00">2021-02-25T00:36:09+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  99.09%
+  98.68%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.63
+         2.61
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>219</b> relevant lines,
-    <span class="green"><b>217</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed. </span>
+    <b>228</b> relevant lines,
+    <span class="green"><b>225</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed. </span>
     (<span class="green">
-  99.09%
+  98.68%
 </span>
 )
   </div>
@@ -105,12 +105,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#273a6aeaf75628341bc0b1b8ef3f2c80322159c4" class="src_link" title="app/model/library.rb">app/model/library.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">92.59 %</td>
-            <td class="cell--number">49</td>
-            <td class="cell--number">27</td>
-            <td class="cell--number">25</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2.00</td>
+            <td class="green strong cell--number t-file__coverage">90.32 %</td>
+            <td class="cell--number">56</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">28</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">1.87</td>
             
           </tr>
         
@@ -121,7 +121,7 @@
             <td class="cell--number">38</td>
             <td class="cell--number">38</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.37</td>
+            <td class="cell--number">4.63</td>
             
           </tr>
         
@@ -161,11 +161,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#870b397d62fef4737e049589165ba79523fc126d" class="src_link" title="spec/model/library_spec.rb">spec/model/library_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">43</td>
-            <td class="cell--number">31</td>
-            <td class="cell--number">31</td>
+            <td class="cell--number">50</td>
+            <td class="cell--number">36</td>
+            <td class="cell--number">36</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.42</td>
+            <td class="cell--number">1.39</td>
             
           </tr>
         
@@ -1153,7 +1153,7 @@
     <h3>app/model/library.rb</h3>
     <h4>
       <span class="green">
-  92.59%
+  90.32%
 </span>
 
       lines covered
@@ -1162,9 +1162,9 @@
     
 
     <div class="t-line-summary">
-      <b>27</b> relevant lines.
-      <span class="green"><b>25</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>31</b> relevant lines.
+      <span class="green"><b>28</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
 
     
@@ -1643,29 +1643,29 @@
 
             
 
-            <code class="ruby">  def self.instance</code>
+            <code class="ruby">  def find_book(isbn)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="44">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    @@instance</code>
+            <code class="ruby">    @shelves.each do |book_shelf|</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="45">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">      return book_shelf.shelf if book_shelf.book.isbn.eql? isbn</code>
           </li>
         </div>
       
@@ -1676,18 +1676,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="47">
+            
             
 
             
 
-            <code class="ruby">  private_class_method :new</code>
+            <code class="ruby">    return 0</code>
           </li>
         </div>
       
@@ -1698,12 +1698,89 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.instance</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="51">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @@instance</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private_class_method :new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
             
             
 
@@ -2009,8 +2086,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="25">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="7" data-linenumber="25">
+            <span class="hits">7</span>
             
 
             
@@ -2020,8 +2097,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="26">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="7" data-linenumber="26">
+            <span class="hits">7</span>
             
 
             
@@ -2031,8 +2108,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="27">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="7" data-linenumber="27">
+            <span class="hits">7</span>
             
 
             
@@ -2042,8 +2119,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="28">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="7" data-linenumber="28">
+            <span class="hits">7</span>
             
 
             
@@ -2372,8 +2449,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="18" data-linenumber="58">
-            <span class="hits">18</span>
+          <li class="covered" data-hits="21" data-linenumber="58">
+            <span class="hits">21</span>
             
 
             
@@ -2383,8 +2460,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="59">
-            <span class="hits">15</span>
+          <li class="covered" data-hits="18" data-linenumber="59">
+            <span class="hits">18</span>
             
 
             
@@ -3517,8 +3594,8 @@
     
 
     <div class="t-line-summary">
-      <b>31</b> relevant lines.
-      <span class="green"><b>31</b> lines covered</span> and
+      <b>36</b> relevant lines.
+      <span class="green"><b>36</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3563,8 +3640,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="4">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="5" data-linenumber="4">
+            <span class="hits">5</span>
             
 
             
@@ -3613,7 +3690,7 @@
 
             
 
-            <code class="ruby">  let(:shelf) { Shelf.new(1,1,1) }</code>
+            <code class="ruby">  let(:shelf) { Shelf.new(1, 1, 1) }</code>
           </li>
         </div>
       
@@ -3910,7 +3987,7 @@
 
             
 
-            <code class="ruby">  context &#39;take_book&#39; do</code>
+            <code class="ruby">  context &#39;find_book&#39; do</code>
           </li>
         </div>
       
@@ -3921,7 +3998,7 @@
 
             
 
-            <code class="ruby">    it &#39;should return shelf&#39; do</code>
+            <code class="ruby">    it &#39;should return shelf if book is found&#39; do</code>
           </li>
         </div>
       
@@ -3943,7 +4020,7 @@
 
             
 
-            <code class="ruby">      library.allocate_book(book)</code>
+            <code class="ruby">      book_slot = library.find_book(isbn)</code>
           </li>
         </div>
       
@@ -3954,23 +4031,12 @@
 
             
 
-            <code class="ruby">      book_slot = library.take_book(shelf)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">      expect(book_slot.print).to eq(&#39;010101&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="41">
+          <li class="never" data-hits="" data-linenumber="40">
             
             
 
@@ -3981,7 +4047,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
+          <li class="never" data-hits="" data-linenumber="41">
             
             
 
@@ -3992,7 +4058,95 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="43">
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  context &#39;take_book&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="43">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;should return shelf&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      library = Library.instance</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      library.allocate_book(book)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      book_slot = library.take_book(shelf)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(book_slot.print).to eq(&#39;010101&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="50">
             
             
 

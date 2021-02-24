@@ -5,7 +5,7 @@ describe Library do
   let(:title) { 'Harry Potter 1' }
   let(:author) { ['J. K. Rowling'] }
   let(:book) { Book.new(isbn, title, author) }
-  let(:shelf) { Shelf.new(1,1,1) }
+  let(:shelf) { Shelf.new(1, 1, 1) }
 
   context 'instance' do
     it 'should return same object id for 2 instances' do
@@ -30,6 +30,13 @@ describe Library do
       library = Library.instance
       book_slot = library.allocate_book(book)
       expect(book_slot.print).to eq('010102')
+    end
+  end
+  context 'find_book' do
+    it 'should return shelf if book is found' do
+      library = Library.instance
+      book_slot = library.find_book(isbn)
+      expect(book_slot.print).to eq('010101')
     end
   end
   context 'take_book' do
