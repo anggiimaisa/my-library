@@ -47,14 +47,14 @@ class Library
     return 0
   end
 
-  def print
-    book_to_be_printed = Array.new
+  def list_book
+    books = Array.new
     @shelves.each do |book_shelf|
       if !book_shelf.book.empty?
-        book_to_be_printed << "#{book_shelf.shelf.print}: #{book_shelf.book.print}"
+        books << "#{book_shelf.shelf.print}: #{book_shelf.book.print}"
       end
     end
-    book_to_be_printed
+    books
   end
 
   def self.instance

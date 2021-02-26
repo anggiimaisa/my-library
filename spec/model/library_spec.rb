@@ -1,4 +1,5 @@
 require './app/model/library'
+require './app/command/print_book_command'
 
 describe Library do
   let(:isbn) { '9780747532743' }
@@ -47,13 +48,11 @@ describe Library do
       expect(book_slot.print).to eq('010101')
     end
   end
-  context 'print' do
-    it 'should return the right format' do
-      library_mock = double
-      allow(library_mock).to receive(:print).and_return(["010102: 9780747532743 | Harry Potter 1 | J. K. Rowling", "010103: 9780747532743 | Harry Potter 1 | J. K. Rowling"])
-
+  context 'list_book' do
+    it 'should return true if library array of book data' do
       library = Library.instance
-      expect(library.print).to eq(library_mock.print)
+      actual = library.list_book.kind_of? (Array)
+      expect(actual).to eq(true)
     end
   end
 end

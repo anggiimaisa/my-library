@@ -261,6 +261,7 @@
       "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/library_spec.rb": {
         "lines": [
           1,
+          1,
           null,
           1,
           5,
@@ -312,8 +313,6 @@
           1,
           1,
           1,
-          1,
-          null,
           1,
           1,
           null,
@@ -391,6 +390,26 @@
           null
         ]
       },
+      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/command/print_book_command.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/command.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
       "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/shelf_spec.rb": {
         "lines": [
           1,
@@ -426,6 +445,6 @@
         ]
       }
     },
-    "timestamp": 1614244652
+    "timestamp": 1614311628
   }
 }
