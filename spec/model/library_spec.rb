@@ -1,5 +1,4 @@
 require './app/model/library'
-require './app/command/print_book_command'
 
 describe Library do
   let(:isbn) { '9780747532743' }

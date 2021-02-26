@@ -96,6 +96,29 @@
           null
         ]
       },
+      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/command_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/command.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/book_shelf_spec.rb": {
         "lines": [
           1,
@@ -261,7 +284,6 @@
       "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/library_spec.rb": {
         "lines": [
           1,
-          1,
           null,
           1,
           5,
@@ -390,26 +412,6 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/command/print_book_command.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/command.rb": {
-        "lines": [
-          1,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
       "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/shelf_spec.rb": {
         "lines": [
           1,
@@ -445,6 +447,6 @@
         ]
       }
     },
-    "timestamp": 1614311628
+    "timestamp": 1614314203
   }
 }
