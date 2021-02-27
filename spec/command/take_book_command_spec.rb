@@ -39,5 +39,12 @@ describe TakeBookCommand do
         expect(actual["value"].book.empty?).to eq(true)
       end
     end
+    context 'unhappy path' do
+      it 'return message invalid code if slot id is not found' do
+        take_book_command = TakeBookCommand.new
+        actual = take_book_command.execute(args_failed)
+        expect(actual["message"]).to eq("Invalid code!")
+      end
+    end
   end
 end
