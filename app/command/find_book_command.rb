@@ -7,6 +7,6 @@ class FindBookCommand < Command
     shelves.each do |book_shelf|
       return "Found the book at #{book_shelf.shelf.print}" if book_shelf.book.isbn.eql? isbn
     end
-    return 0
+    return "Book not found!"
   end
 end

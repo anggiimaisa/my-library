@@ -9,7 +9,7 @@ describe FindBookCommand do
   let(:first_shelf) { Shelf.new(1, 1, 1) }
 
   context 'execute' do
-    it 'should print book slot' do
+    it 'should print book slot if book isb is found' do
       args = {
         "shelves" => [
           BookShelf.new(first_shelf, book)
@@ -17,7 +17,8 @@ describe FindBookCommand do
         "isbn" => isbn
       }
       find_book_command = FindBookCommand.new
-      find_book_command.execute(args)
+      actual = find_book_command.execute(args)
+      expect(actual).to eq("Found the book at 010101")
     end
   end
 end

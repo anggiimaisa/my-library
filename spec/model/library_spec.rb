@@ -32,12 +32,4 @@ describe Library do
       expect(book_slot.print).to eq('010102')
     end
   end
-  context 'take_book' do
-    it 'should return shelf' do
-      library = Library.instance
-      library.allocate_book(book)
-      book_slot = library.take_book(shelf)
-      expect(book_slot.print).to eq('010101')
-    end
-  end
 end
