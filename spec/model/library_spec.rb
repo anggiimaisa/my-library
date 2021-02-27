@@ -32,13 +32,6 @@ describe Library do
       expect(book_slot.print).to eq('010102')
     end
   end
-  context 'find_book' do
-    it 'should return shelf if book is found' do
-      library = Library.instance
-      book_slot = library.find_book(isbn)
-      expect(book_slot.print).to eq('010101')
-    end
-  end
   context 'take_book' do
     it 'should return shelf' do
       library = Library.instance

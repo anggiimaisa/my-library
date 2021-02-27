@@ -40,13 +40,6 @@ class Library
     return 0
   end
 
-  def find_book(isbn)
-    @shelves.each do |book_shelf|
-      return book_shelf.shelf if book_shelf.book.isbn.eql? isbn
-    end
-    return 0
-  end
-
   def self.instance
     @@instance
   end
