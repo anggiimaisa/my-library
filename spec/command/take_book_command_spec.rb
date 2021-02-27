@@ -10,7 +10,7 @@ describe TakeBookCommand do
   let(:second_shelf) { Shelf.new(1, 1, 2) }
 
   context 'execute' do
-    it 'should free the book slot if slot id is found' do
+    it 'should return message the book slot if slot id is found' do
       args = {
         "shelves" => [
           BookShelf.new(first_shelf, book)
@@ -19,7 +19,7 @@ describe TakeBookCommand do
       }
       take_book_command = TakeBookCommand.new
       actual = take_book_command.execute(args)
-      expect(actual).to eq("Slot #{slot_id} is free")
+      expect(actual["message"]).to eq("Slot #{slot_id} is free")
     end
   end
 end

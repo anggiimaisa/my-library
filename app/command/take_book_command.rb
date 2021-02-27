@@ -7,10 +7,12 @@ class TakeBookCommand < Command
       if book_shelf.shelf.eql? adapter.parse(slot_id)
         if !book_shelf.book.empty?
           book_shelf.book = Book.new
-          return "Slot #{book_shelf.shelf.print} is free"
+          return { 'message' => "Slot #{book_shelf.shelf.print} is free",
+                   'value' => book_shelf }
         end
       end
     end
-    return "Invalid code!"
+    return { 'message' => "Invalid code!",
+             'value' => nil }
   end
 end
