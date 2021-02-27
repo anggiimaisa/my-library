@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-27T19:07:18+07:00">2021-02-27T19:07:18+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-28T00:05:24+07:00">2021-02-28T00:05:24+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  98.89%
+  98.65%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.61
+         2.59
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>16</b> files in total.
+    <b>18</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>270</b> relevant lines,
-    <span class="green"><b>267</b> lines covered</span> and
-    <span class="red"><b>3</b> lines missed. </span>
+    <b>296</b> relevant lines,
+    <span class="green"><b>292</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed. </span>
     (<span class="green">
-  98.89%
+  98.65%
 </span>
 )
   </div>
@@ -77,7 +77,7 @@
             <td class="cell--number">4</td>
             <td class="cell--number">4</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.25</td>
             
           </tr>
         
@@ -115,13 +115,24 @@
           </tr>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#1ace638b8686bb3232adca436eb1f464ac65d265" class="src_link" title="app/command/take_book_command.rb">app/command/take_book_command.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">90.91 %</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0.91</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#7e806c2b9a8a13eeca6ff16610b7ba9682abba80" class="src_link" title="app/model/book.rb">app/model/book.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">52</td>
             <td class="cell--number">31</td>
             <td class="cell--number">31</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">6.13</td>
+            <td class="cell--number">6.45</td>
             
           </tr>
         
@@ -132,7 +143,7 @@
             <td class="cell--number">11</td>
             <td class="cell--number">11</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.18</td>
+            <td class="cell--number">4.36</td>
             
           </tr>
         
@@ -154,7 +165,7 @@
             <td class="cell--number">38</td>
             <td class="cell--number">38</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">5.50</td>
+            <td class="cell--number">5.95</td>
             
           </tr>
         
@@ -188,6 +199,17 @@
             <td class="cell--number">14</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.43</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#babfaceae3a519629cc36b75692bac2a600e5913" class="src_link" title="spec/command/take_book_command_spec.rb">spec/command/take_book_command_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.40</td>
             
           </tr>
         
@@ -334,8 +356,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
             
 
             
@@ -772,6 +794,213 @@
 </div>
 
       
+        <div class="source_table" id="1ace638b8686bb3232adca436eb1f464ac65d265">
+  <div class="header">
+    <h3>app/command/take_book_command.rb</h3>
+    <h4>
+      <span class="green">
+  90.91%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>11</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class TakeBookCommand &lt; Command</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def execute(args)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    shelves = args[&quot;shelves&quot;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    slot_id = args[&quot;slot_id&quot;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    adapter = SlotIdToShelfAdapter.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    shelves.each do |book_shelf|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      if book_shelf.shelf.eql? adapter.parse(slot_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        if !book_shelf.book.empty?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          book_shelf.book = Book.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          return &quot;Slot #{book_shelf.shelf.print} is free&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    return &quot;Invalid code!&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="7e806c2b9a8a13eeca6ff16610b7ba9682abba80">
   <div class="header">
     <h3>app/model/book.rb</h3>
@@ -843,8 +1072,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="26" data-linenumber="5">
-            <span class="hits">26</span>
+          <li class="covered" data-hits="28" data-linenumber="5">
+            <span class="hits">28</span>
             
 
             
@@ -854,8 +1083,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="26" data-linenumber="6">
-            <span class="hits">26</span>
+          <li class="covered" data-hits="28" data-linenumber="6">
+            <span class="hits">28</span>
             
 
             
@@ -865,8 +1094,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="26" data-linenumber="7">
-            <span class="hits">26</span>
+          <li class="covered" data-hits="28" data-linenumber="7">
+            <span class="hits">28</span>
             
 
             
@@ -997,8 +1226,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="13" data-linenumber="19">
-            <span class="hits">13</span>
+          <li class="covered" data-hits="14" data-linenumber="19">
+            <span class="hits">14</span>
             
 
             
@@ -1151,8 +1380,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="33">
-            <span class="hits">15</span>
+          <li class="covered" data-hits="16" data-linenumber="33">
+            <span class="hits">16</span>
             
 
             
@@ -1162,8 +1391,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="34">
-            <span class="hits">15</span>
+          <li class="covered" data-hits="16" data-linenumber="34">
+            <span class="hits">16</span>
             
 
             
@@ -1184,8 +1413,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="36">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="10" data-linenumber="36">
+            <span class="hits">10</span>
             
 
             
@@ -1457,8 +1686,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="18" data-linenumber="6">
-            <span class="hits">18</span>
+          <li class="covered" data-hits="19" data-linenumber="6">
+            <span class="hits">19</span>
             
 
             
@@ -1468,8 +1697,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="18" data-linenumber="7">
-            <span class="hits">18</span>
+          <li class="covered" data-hits="19" data-linenumber="7">
+            <span class="hits">19</span>
             
 
             
@@ -2256,8 +2485,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="26" data-linenumber="5">
-            <span class="hits">26</span>
+          <li class="covered" data-hits="28" data-linenumber="5">
+            <span class="hits">28</span>
             
 
             
@@ -2267,8 +2496,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="26" data-linenumber="6">
-            <span class="hits">26</span>
+          <li class="covered" data-hits="28" data-linenumber="6">
+            <span class="hits">28</span>
             
 
             
@@ -2278,8 +2507,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="26" data-linenumber="7">
-            <span class="hits">26</span>
+          <li class="covered" data-hits="28" data-linenumber="7">
+            <span class="hits">28</span>
             
 
             
@@ -2410,8 +2639,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="19">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="3" data-linenumber="19">
+            <span class="hits">3</span>
             
 
             
@@ -2476,8 +2705,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="25">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="10" data-linenumber="25">
+            <span class="hits">10</span>
             
 
             
@@ -2487,8 +2716,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="26">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="10" data-linenumber="26">
+            <span class="hits">10</span>
             
 
             
@@ -2498,8 +2727,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="27">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="10" data-linenumber="27">
+            <span class="hits">10</span>
             
 
             
@@ -2509,8 +2738,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="28">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="10" data-linenumber="28">
+            <span class="hits">10</span>
             
 
             
@@ -2839,8 +3068,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="27" data-linenumber="58">
-            <span class="hits">27</span>
+          <li class="covered" data-hits="30" data-linenumber="58">
+            <span class="hits">30</span>
             
 
             
@@ -2850,8 +3079,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="59">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="27" data-linenumber="59">
+            <span class="hits">27</span>
             
 
             
@@ -3637,6 +3866,312 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="babfaceae3a519629cc36b75692bac2a600e5913">
+  <div class="header">
+    <h3>spec/command/take_book_command_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>15</b> relevant lines.
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;./app/command/take_book_command&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe TakeBookCommand do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:slot_id) { &#39;010101&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:isbn) { &#39;9780747532743&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:title) { &#39;Harry Potter 1&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="7">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:author) { [&#39;J. K. Rowling&#39;] }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="8">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:book) { Book.new(isbn, title, author) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="9">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:first_shelf) { Shelf.new(1, 1, 1) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  let(:second_shelf) { Shelf.new(1, 1, 2) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  context &#39;execute&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;should free the book slot if slot id is found&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">      args = {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        &quot;shelves&quot; =&gt; [</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">          BookShelf.new(first_shelf, book)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">        ],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">        &quot;slot_id&quot; =&gt; slot_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">      }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      take_book_command = TakeBookCommand.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      actual = take_book_command.execute(args)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(actual).to eq(&quot;Slot #{slot_id} is free&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
