@@ -45,6 +45,11 @@ describe TakeBookCommand do
         actual = take_book_command.execute(args_failed)
         expect(actual["message"]).to eq("Invalid code!")
       end
+      it 'return value nil if slot id is not found' do
+        take_book_command = TakeBookCommand.new
+        actual = take_book_command.execute(args_failed)
+        expect(actual["value"]).to eq(nil)
+      end
     end
   end
 end
