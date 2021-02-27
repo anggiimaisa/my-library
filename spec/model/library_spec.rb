@@ -47,11 +47,4 @@ describe Library do
       expect(book_slot.print).to eq('010101')
     end
   end
-  context 'list_book' do
-    it 'should return true if library array of book data' do
-      library = Library.instance
-      actual = library.list_book.kind_of? (Array)
-      expect(actual).to eq(true)
-    end
-  end
 end

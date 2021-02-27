@@ -47,16 +47,6 @@ class Library
     return 0
   end
 
-  def list_book
-    books = Array.new
-    @shelves.each do |book_shelf|
-      if !book_shelf.book.empty?
-        books << "#{book_shelf.shelf.print}: #{book_shelf.book.print}"
-      end
-    end
-    books
-  end
-
   def self.instance
     @@instance
   end

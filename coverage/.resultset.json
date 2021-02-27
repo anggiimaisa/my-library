@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/adapter/slot_id_to_shelf_adapter_spec.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/adapter/slot_id_to_shelf_adapter_spec.rb": {
         "lines": [
           1,
           null,
@@ -17,7 +17,7 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/adapter/slot_id_to_shelf_adapter.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/adapter/slot_id_to_shelf_adapter.rb": {
         "lines": [
           1,
           null,
@@ -28,15 +28,15 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/model/shelf.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/model/shelf.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          22,
-          22,
-          22,
+          25,
+          25,
+          25,
           null,
           null,
           1,
@@ -54,10 +54,10 @@
           null,
           null,
           1,
-          9,
-          9,
-          9,
-          9,
+          10,
+          10,
+          10,
+          10,
           null,
           null,
           1,
@@ -87,8 +87,8 @@
           null,
           null,
           1,
+          30,
           27,
-          24,
           null,
           3,
           null,
@@ -96,7 +96,34 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/command/list_book_command_spec.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/command/find_book_command_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/command/find_book_command.rb": {
         "lines": [
           1,
           null,
@@ -105,24 +132,14 @@
           1,
           1,
           1,
-          null,
-          null,
-          null
-        ]
-      },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/command/list_book_command.rb": {
-        "lines": [
           1,
           null,
-          1,
-          1,
-          1,
-          1,
+          0,
           null,
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/command.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/command.rb": {
         "lines": [
           1,
           1,
@@ -131,7 +148,48 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/command_spec.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/command/list_book_command_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/command/list_book_command.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/command_spec.rb": {
         "lines": [
           1,
           null,
@@ -145,7 +203,7 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/book_shelf_spec.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/model/book_shelf_spec.rb": {
         "lines": [
           1,
           1,
@@ -184,15 +242,15 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/model/book_shelf.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/model/book_shelf.rb": {
         "lines": [
           1,
           1,
           1,
           null,
           1,
-          15,
-          15,
+          18,
+          18,
           null,
           null,
           1,
@@ -207,15 +265,15 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/model/book.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/model/book.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          24,
-          24,
-          24,
+          26,
+          26,
+          26,
           null,
           null,
           1,
@@ -227,11 +285,11 @@
           null,
           null,
           1,
-          23,
-          15,
-          15,
+          13,
+          5,
+          5,
           null,
-          15,
+          5,
           null,
           null,
           1,
@@ -241,29 +299,29 @@
           1,
           null,
           1,
-          25,
-          25,
+          15,
+          15,
           null,
           9,
           null,
           null,
           1,
-          16,
-          16,
+          6,
+          6,
           null,
           1,
           null,
           null,
           1,
-          16,
-          16,
+          6,
+          6,
           null,
           1,
           null,
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/book_spec.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/model/book_spec.rb": {
         "lines": [
           1,
           null,
@@ -307,7 +365,7 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/library_spec.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/model/library_spec.rb": {
         "lines": [
           1,
           null,
@@ -358,17 +416,10 @@
           1,
           null,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/app/model/library.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/model/library.rb": {
         "lines": [
           1,
           1,
@@ -420,17 +471,7 @@
           null,
           null,
           1,
-          2,
-          2,
-          12,
-          2,
-          null,
-          null,
-          2,
-          null,
-          null,
-          1,
-          9,
+          7,
           null,
           null,
           1,
@@ -438,7 +479,7 @@
           null
         ]
       },
-      "D:/ElectivesxGoAcademy/Advanced/library-final-project-electives/spec/model/shelf_spec.rb": {
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/model/shelf_spec.rb": {
         "lines": [
           1,
           null,
@@ -473,6 +514,6 @@
         ]
       }
     },
-    "timestamp": 1614314686
+    "timestamp": 1614412274
   }
 }

@@ -1,8 +1,11 @@
 require_relative '../command'
 
 class ListBookCommand < Command
-  def execute(args = '')
-    library = Library.instance
-    library.list_book.each { |book_printed| puts book_printed }
+  def execute(args)
+    args.each do |book_shelf|
+      if !book_shelf.book.empty?
+        puts "#{book_shelf.shelf.print}: #{book_shelf.book.print}"
+      end
+    end
   end
 end
