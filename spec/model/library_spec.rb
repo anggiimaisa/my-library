@@ -20,16 +20,4 @@ describe Library do
       expect(library.generate_shelves(1, 3, 4)).to eq(12)
     end
   end
-  context 'allocate_book' do
-    it 'should return the first empty slot' do
-      library = Library.instance
-      book_slot = library.allocate_book(book)
-      expect(book_slot.print).to eq('010101')
-    end
-    it 'should return the second empty slot when the first is not empty' do
-      library = Library.instance
-      book_slot = library.allocate_book(book)
-      expect(book_slot.print).to eq('010102')
-    end
-  end
 end

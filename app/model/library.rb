@@ -18,16 +18,6 @@ class Library
     @shelves.length()
   end
 
-  def allocate_book(book)
-    @shelves.each do |book_shelf|
-      if book_shelf.book.empty?
-        book_shelf.book = book
-        return book_shelf.shelf
-      end
-    end
-    return 0
-  end
-
   def self.instance
     @@instance
   end
