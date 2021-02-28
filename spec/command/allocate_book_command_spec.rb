@@ -8,19 +8,31 @@ describe AllocateBookCommand do
   let(:author) { ['J. K. Rowling'] }
   let(:book) { Book.new(isbn, title, author) }
   let(:first_shelf) { Shelf.new(1, 1, 1) }
-  let(:book_shelf) { BookShelf.new(first_shelf) }
+  let(:empty_book_shelf) { BookShelf.new(first_shelf) }
+  let(:filled_book_shelf) { BookShelf.new(first_shelf, book) }
 
   context 'execute' do
     it 'should print book located address if shelf is still available' do
       args = {
         "shelves" => [
-          book_shelf
+          empty_book_shelf
         ],
         "book" => book
       }
       allocate_book_command = AllocateBookCommand.new
       actual = allocate_book_command.execute(args)
       expect(actual).to eq("Allocated address: #{slot_id}")
+    end
+    it 'should print shelves are full if shelf is not available' do
+      args = {
+        "shelves" => [
+          filled_book_shelf
+        ],
+        "book" => book
+      }
+      allocate_book_command = AllocateBookCommand.new
+      actual = allocate_book_command.execute(args)
+      expect(actual).to eq('All shelves are full!')
     end
   end
 end
