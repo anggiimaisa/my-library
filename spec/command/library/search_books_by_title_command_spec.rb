@@ -30,7 +30,7 @@ describe FindBookCommand do
       actual = search_books_by_title_command.execute(args)
       expectation = ["010101: #{first_isbn} | #{first_title} | #{first_author.join(', ')}",
                      "010103: #{first_isbn} | #{first_title} | #{first_author.join(', ')}"]
-      expect(actual).to eq(expectation)
+      expect(actual['message']).to eq(expectation)
     end
     it 'should return message book not found if book title is not found' do
       args = {
@@ -41,7 +41,7 @@ describe FindBookCommand do
       }
       search_books_by_title_command = SearchBooksByTitleCommand.new
       actual = search_books_by_title_command.execute(args)
-      expect(actual).to eq('Book not found!')
+      expect(actual['message']).to eq('Book not found!')
     end
   end
 end
