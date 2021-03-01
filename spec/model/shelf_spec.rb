@@ -31,4 +31,10 @@ describe Shelf do
       expect(shelf.print).to eq('121314')
     end
   end
+  context 'eql?' do
+    it 'should return true if shelf has the same value' do
+      shelf = Shelf.new(1,1,1)
+      expect(shelf.eql? Shelf.new(1,1,1)).to eq(true)
+    end
+  end
 end
