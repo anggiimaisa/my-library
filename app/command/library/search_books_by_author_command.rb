@@ -11,7 +11,7 @@ class SearchBooksByAuthorCommand < Command
         shelves_book_filtered << book_shelf.print
       end
     end
-    return "Book not found!" unless !shelves_book_filtered.empty?
-    shelves_book_filtered
+    return { 'message' => 'Book not found!' } unless !shelves_book_filtered.empty?
+    { 'message' => shelves_book_filtered }
   end
 end

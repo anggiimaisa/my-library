@@ -29,7 +29,7 @@ describe FindBookCommand do
       search_books_by_author_command = SearchBooksByAuthorCommand.new
       actual = search_books_by_author_command.execute(args)
       expectation = ["010102: #{second_isbn} | #{second_title} | #{second_author.join(', ')}"]
-      expect(actual).to eq(expectation)
+      expect(actual['message']).to eq(expectation)
     end
   end
 end
