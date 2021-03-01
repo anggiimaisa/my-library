@@ -710,7 +710,6 @@
           1,
           null,
           null,
-          null,
           1,
           null,
           null,
@@ -725,6 +724,43 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/factory/library/arg_search_books_by_author_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/factory/library/arg_search_books_by_author.rb": {
+        "lines": [
+          1,
+          null,
           1,
           1,
           1,
@@ -1009,7 +1045,7 @@
           1,
           null,
           1,
-          12,
+          14,
           null,
           null,
           1,
@@ -1066,6 +1102,6 @@
         ]
       }
     },
-    "timestamp": 1614609171
+    "timestamp": 1614610822
   }
 }
