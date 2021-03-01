@@ -36,5 +36,9 @@ describe Shelf do
       shelf = Shelf.new(1,1,1)
       expect(shelf.eql? Shelf.new(1,1,1)).to eq(true)
     end
+    it 'should return false if shelf has not the same value' do
+      shelf = Shelf.new(1,1,1)
+      expect(shelf.eql? Shelf.new(1,1,2)).to eq(false)
+    end
   end
 end
