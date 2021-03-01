@@ -2,7 +2,9 @@ require './app/model/book'
 
 describe 'Book' do
   let(:isbn) { '9780747532743' }
+  let(:second_isbn) { '9780747522743' }
   let(:title) { 'Harry Potter 1' }
+  let(:second_title) { 'Harry Potter 2' }
   let(:authors) { ['J. K. Rowling'] }
   let(:author_to_be_searched) { 'Rowling' }
   let(:title_to_be_searched) { 'Harry Potter 1' }
@@ -56,6 +58,10 @@ describe 'Book' do
     it 'should return true if book has the same value' do
       book = Book.new(isbn, title, authors)
       expect(book.eql?Book.new(isbn, title, authors)).to eq(true)
+    end
+    it 'should return false if book has not the same value' do
+      book = Book.new(isbn, title, authors)
+      expect(book.eql? Book.new(second_isbn, second_title, authors)).to eq(false)
     end
   end
 end
