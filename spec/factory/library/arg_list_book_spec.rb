@@ -6,7 +6,7 @@ describe ArgListBook do
       arg_list_book = ArgListBook.new
       actual = arg_list_book.get
       library = double
-      allow(library).to receive(:instance).and_return(Library.instance)
+      allow(library).to receive(:instance).and_return(Library.instance.shelves)
       expect(actual).to eq(library.instance)
     end
   end

@@ -1,7 +1,7 @@
 require './app/factory/argument'
 
 class ArgListBook < Argument
-  def get
-    Library.instance
+  def get(param = '')
+    Library.instance.shelves
   end
 end
