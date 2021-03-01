@@ -11,9 +11,9 @@ class ArgLibraryFactory
     case command
       when 'build_library'
         ArgBuildLibrary.new
-      when 'take_book'
+      when 'take_book_from'
         ArgTakeBook.new
-      when 'list_book'
+      when 'list_books'
         ArgListBook.new
       when 'put_book'
         ArgPutBook.new
