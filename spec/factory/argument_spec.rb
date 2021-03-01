@@ -1,4 +1,4 @@
-require './app/argument'
+require './app/factory/argument'
 
 describe Argument do
   context 'get' do
