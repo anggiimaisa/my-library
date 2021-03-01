@@ -9,7 +9,7 @@ describe ArgSearchBooksByAuthor do
       library = double
       allow(library).to receive(:instance).and_return(Library.instance)
       expectation = {
-        'shelves' => library.instance,
+        'shelves' => library.instance.shelves,
         'book_author' => author
       }
       expect(actual).to eq(expectation)
