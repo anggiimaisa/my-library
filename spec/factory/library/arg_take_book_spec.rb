@@ -7,7 +7,7 @@ describe ArgTakeBook do
       arg_take_book = ArgTakeBook.new
       actual = arg_take_book.get(slot_id)
       library = double
-      allow(library).to receive(:instance).and_return(Library.instance)
+      allow(library).to receive(:instance).and_return(Library.instance.shelves)
       expectation = {
         'shelves' => library.instance,
         'slot_id' => slot_id
