@@ -19,7 +19,7 @@ describe FindBookCommand do
   let(:third_book_shelf) { BookShelf.new(third_shelf, first_book) }
 
   context 'execute' do
-    it 'should print filtered list of book if book author is found' do
+    it 'should return filtered list of book if book author is found' do
       args = {
         "shelves" => [
           first_book_shelf, second_book_shelf, third_book_shelf
