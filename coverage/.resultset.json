@@ -622,6 +622,43 @@
           null
         ]
       },
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/factory/library/arg_find_book_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/app/factory/library/arg_find_book.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "C:/Users/Adriansyah Latief/Desktop/Anggi/electives/goacademy/advance/my-library/spec/factory/library/arg_list_book_spec.rb": {
         "lines": [
           1,
@@ -905,7 +942,7 @@
           1,
           null,
           1,
-          8,
+          10,
           null,
           null,
           1,
@@ -952,6 +989,6 @@
         ]
       }
     },
-    "timestamp": 1614598806
+    "timestamp": 1614601868
   }
 }
