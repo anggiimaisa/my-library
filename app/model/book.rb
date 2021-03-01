@@ -27,6 +27,12 @@ class Book
     "#{@isbn} | #{@title} | #{@authors.join(', ')}"
   end
 
+  def eql?(book)
+    @authors == book.authors &&
+    @isbn == book.isbn &&
+    @title == book.title
+  end
+
   def include_title?(book_title)
     @title.include? book_title
   end

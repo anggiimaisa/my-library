@@ -52,4 +52,10 @@ describe 'Book' do
       end
     end
   end
+  context 'eql?' do
+    it 'should return true if book has the same value' do
+      book = Book.new(isbn, title, authors)
+      expect(book.eql?Book.new(isbn, title, authors)).to eq(true)
+    end
+  end
 end
