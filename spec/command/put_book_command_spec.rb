@@ -1,6 +1,6 @@
-require './app/command/allocate_book_command'
+require './app/command/put_book_command'
 
-describe AllocateBookCommand do
+describe PutBookCommand do
   let(:slot_id) { '010101' }
   let(:isbn) { '9780747532743' }
   let(:isbn_not_found) { '9780747532323' }
@@ -19,7 +19,7 @@ describe AllocateBookCommand do
         ],
         "book" => book
       }
-      allocate_book_command = AllocateBookCommand.new
+      allocate_book_command = PutBookCommand.new
       actual = allocate_book_command.execute(args)
       expect(actual).to eq("Allocated address: #{slot_id}")
     end
@@ -30,7 +30,7 @@ describe AllocateBookCommand do
         ],
         "book" => book
       }
-      allocate_book_command = AllocateBookCommand.new
+      allocate_book_command = PutBookCommand.new
       actual = allocate_book_command.execute(args)
       expect(actual).to eq('All shelves are full!')
     end

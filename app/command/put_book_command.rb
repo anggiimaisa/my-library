@@ -1,7 +1,7 @@
 require './app/command'
 
 
-class AllocateBookCommand < Command
+class PutBookCommand < Command
   def execute(args)
     shelves = args["shelves"]
     book = args["book"]
