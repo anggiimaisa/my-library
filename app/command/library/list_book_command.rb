@@ -8,6 +8,7 @@ class ListBookCommand < Command
         books << "#{book_shelf.shelf.print}: #{book_shelf.book.print}"
       end
     end
-    books
+    return { 'message' => books } unless books.empty?
+    { 'message' => 'There is no book added' }
   end
 end

@@ -18,7 +18,7 @@ describe ListBookCommand do
       list_book_command = ListBookCommand.new
       actual = list_book_command.execute(library)
       expectation = ["010101: #{isbn} | #{title} | #{author.join(', ')}", "010102: #{isbn} | #{title} | #{author.join(', ')}"]
-      expect(actual).to eq(expectation)
+      expect(actual['message']).to eq(expectation)
     end
   end
 end
