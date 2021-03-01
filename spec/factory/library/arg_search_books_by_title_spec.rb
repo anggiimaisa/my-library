@@ -9,7 +9,7 @@ describe ArgSearchBooksByTitle do
       library = double
       allow(library).to receive(:instance).and_return(Library.instance)
       expectation = {
-        'shelves' => library.instance,
+        'shelves' => library.instance.shelves,
         'book_title' => title
       }
       expect(actual).to eq(expectation)
