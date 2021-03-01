@@ -4,10 +4,9 @@ class BuildLibraryCommand < Command
   def execute(args)
     shelves = args['shelves']
     shelf_size = args['shelf_size'].split('|')
-    puts shelf_size
-    total_shelf = shelf_size[0]
-    total_row = shelf_size[1]
-    total_column = shelf_size[2]
+    total_shelf = shelf_size[0].to_i
+    total_row = shelf_size[1].to_i
+    total_column = shelf_size[2].to_i
     message = Array.new
 
     generate_shelves(shelves, message, total_shelf, total_row, total_column)
