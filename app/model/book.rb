@@ -1,10 +1,10 @@
 class Book
-  attr_reader :isbn, :title, :author
+  attr_reader :isbn, :title, :authors
 
-  def initialize(isbn = '', title = '', author = [])
+  def initialize(isbn = '', title = '', authors = [])
     @isbn = isbn
     @title = title
-    @author = author
+    @authors = authors
   end
 
   def valid?
@@ -24,11 +24,15 @@ class Book
   end
 
   def print
-    "#{@isbn} | #{@title} | #{@author.join(', ')}"
+    "#{@isbn} | #{@title} | #{@authors.join(', ')}"
   end
 
   def include_title?(book_title)
-    title.include? book_title
+    @title.include? book_title
+  end
+
+  def include_author?(book_author)
+    @authors.any? { |author| author.include? book_author }
   end
 
   private
@@ -48,8 +52,8 @@ class Book
   end
 
   def author_valid?
-    return false if @author.nil?
-    return false if @author.empty?
+    return false if @authors.nil?
+    return false if @authors.empty?
 
     true
   end
