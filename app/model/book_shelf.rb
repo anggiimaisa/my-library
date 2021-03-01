@@ -1,3 +1,5 @@
+require './app/model/book'
+
 class BookShelf
   attr_reader :shelf
   attr_accessor :book
