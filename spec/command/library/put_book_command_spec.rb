@@ -1,4 +1,4 @@
-require './app/command/put_book_command'
+require './app/command/library/put_book_command'
 
 describe PutBookCommand do
   let(:slot_id) { '010101' }

@@ -1,4 +1,4 @@
-require './app/command'
+require './app/command/command'
 
 describe Command do
   context 'execute' do

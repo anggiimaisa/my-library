@@ -1,4 +1,4 @@
-require './app/command'
+require './app/command/command'
 
 class BuildLibraryCommand < Command
   def execute(args)

@@ -1,4 +1,4 @@
-require './app/command'
+require './app/command/command'
 
 class FindBookCommand < Command
   def execute(args)

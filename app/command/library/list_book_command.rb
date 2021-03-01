@@ -1,4 +1,4 @@
-require_relative '../command'
+require './app/command/command'
 
 class ListBookCommand < Command
   def execute(args)

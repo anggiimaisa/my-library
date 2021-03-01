@@ -1,3 +1,5 @@
+require './app/command/command'
+
 class TakeBookCommand < Command
   def execute(args)
     shelves = args["shelves"]

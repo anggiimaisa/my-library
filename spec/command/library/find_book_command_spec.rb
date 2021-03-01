@@ -1,4 +1,4 @@
-require './app/command/find_book_command'
+require './app/command/library/find_book_command'
 
 describe FindBookCommand do
   let(:slot_id) { '010101' }

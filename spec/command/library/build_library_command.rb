@@ -1,4 +1,4 @@
-require './app/command/build_library_command'
+require './app/command/library/build_library_command'
 
 describe BuildLibraryCommand do
   let(:book_shelf) { Array.new }
