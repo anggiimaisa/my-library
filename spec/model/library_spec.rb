@@ -1,10 +1,7 @@
 require './app/model/library'
 
 describe Library do
-  let(:isbn) { '9780747532743' }
-  let(:title) { 'Harry Potter 1' }
-  let(:author) { ['J. K. Rowling'] }
-  let(:book) { Book.new(isbn, title, author) }
+  let(:slot_id) { '010101' }
   let(:shelf) { Shelf.new(1, 1, 1) }
 
   context 'instance' do
@@ -12,6 +9,13 @@ describe Library do
       first_library = Library.instance
       second_library = Library.instance
       expect(first_library.object_id).to eq(second_library.object_id)
+    end
+  end
+  context 'add' do
+    it 'should return slot id if book is added' do
+      library = Library.instance
+      actual = library.add(shelf)
+      expect(actual).to eq(slot_id)
     end
   end
 end
