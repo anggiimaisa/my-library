@@ -4,6 +4,7 @@ describe 'Book' do
   let(:isbn) { '9780747532743' }
   let(:title) { 'Harry Potter 1' }
   let(:author) { ['J. K. Rowling'] }
+  let(:title_to_be_searched) { 'Harry Potter 1' }
 
   context 'check existence of Book data' do
     context 'valid?' do
@@ -17,7 +18,6 @@ describe 'Book' do
         expect(book.valid?).to eq(true)
       end
     end
-
     context 'empty?' do
       it 'should return true if book is empty' do
         book = Book.new
@@ -29,12 +29,20 @@ describe 'Book' do
         expect(book.empty?).to eq(false)
       end
     end
-
+  end
+  context 'print' do
     it 'verify print book format' do
       book = Book.new(isbn, title, author)
       template = "#{isbn} | #{title} | #{author.join(', ')}"
       expect(book.print).to eq(template)
     end
   end
-
+  context 'check filter book data' do
+    context 'include_title?' do
+      it 'should return true if book title is found' do
+        book = Book.new(isbn, title, author)
+        expect(book.include_title? title_to_be_searched).to eq(true)
+      end
+    end
+  end
 end

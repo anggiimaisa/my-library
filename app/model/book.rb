@@ -27,6 +27,10 @@ class Book
     "#{@isbn} | #{@title} | #{@author.join(', ')}"
   end
 
+  def include_title?(book_title)
+    title.include? book_title
+  end
+
   private
 
   def isbn_valid?
