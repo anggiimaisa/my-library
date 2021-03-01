@@ -13,7 +13,7 @@ describe ArgPutBook do
       library = double
       allow(library).to receive(:instance).and_return(Library.instance)
       expectation = {
-        'shelves' => library.instance,
+        'shelves' => library.instance.shelves,
         'book' => Book.new(isbn, title, authors)
       }
       result = actual['shelves'] == expectation['shelves'] &&

@@ -8,7 +8,7 @@ class ArgPutBook < Argument
     author = params[2..params.size-1][0].split(', ')
     book = Book.new(isbn, title, author)
     {
-      "shelves" => Library.instance,
+      "shelves" => Library.instance.shelves,
       "book" => book
     }
   end
