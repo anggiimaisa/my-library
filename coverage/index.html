@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-03-01T12:41:14+07:00">2021-03-01T12:41:14+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-03-01T12:42:22+07:00">2021-03-01T12:42:22+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.33
+         2.38
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>20</b> files in total.
+    <b>22</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>336</b> relevant lines,
-    <span class="green"><b>336</b> lines covered</span> and
+    <b>370</b> relevant lines,
+    <span class="green"><b>370</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -126,6 +126,17 @@
           </tr>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#afbb08ad22198af8114efa3e40f329b40068c4b0" class="src_link" title="app/command/search_books_by_title_command.rb">app/command/search_books_by_title_command.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.30</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#1ace638b8686bb3232adca436eb1f464ac65d265" class="src_link" title="app/command/take_book_command.rb">app/command/take_book_command.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">18</td>
@@ -143,7 +154,7 @@
             <td class="cell--number">35</td>
             <td class="cell--number">35</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.83</td>
+            <td class="cell--number">5.14</td>
             
           </tr>
         
@@ -154,7 +165,7 @@
             <td class="cell--number">11</td>
             <td class="cell--number">11</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">3.27</td>
+            <td class="cell--number">4.00</td>
             
           </tr>
         
@@ -176,7 +187,7 @@
             <td class="cell--number">38</td>
             <td class="cell--number">38</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">5.42</td>
+            <td class="cell--number">6.18</td>
             
           </tr>
         
@@ -221,6 +232,17 @@
             <td class="cell--number">22</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.59</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#8d36e3f6a790af4c56763426e7364432a750165c" class="src_link" title="spec/command/search_books_by_title_command_spec.rb">spec/command/search_books_by_title_command_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">36</td>
+            <td class="cell--number">24</td>
+            <td class="cell--number">24</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.63</td>
             
           </tr>
         
@@ -1045,6 +1067,213 @@
 </div>
 
       
+        <div class="source_table" id="afbb08ad22198af8114efa3e40f329b40068c4b0">
+  <div class="header">
+    <h3>app/command/search_books_by_title_command.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;./app/command&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class SearchBooksByTitleCommand &lt; Command</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def execute(args)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    shelves = args[&#39;shelves&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    book_title = args[&#39;book_title&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    shelves_book_filtered = Array.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    shelves.each do |book_shelf|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="10">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      if book_shelf.book.include_title? book_title</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">        shelves_book_filtered &lt;&lt; book_shelf.print</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    shelves_book_filtered</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="1ace638b8686bb3232adca436eb1f464ac65d265">
   <div class="header">
     <h3>app/command/take_book_command.rb</h3>
@@ -1345,8 +1574,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="22" data-linenumber="5">
-            <span class="hits">22</span>
+          <li class="covered" data-hits="24" data-linenumber="5">
+            <span class="hits">24</span>
             
 
             
@@ -1356,8 +1585,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="22" data-linenumber="6">
-            <span class="hits">22</span>
+          <li class="covered" data-hits="24" data-linenumber="6">
+            <span class="hits">24</span>
             
 
             
@@ -1367,8 +1596,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="22" data-linenumber="7">
-            <span class="hits">22</span>
+          <li class="covered" data-hits="24" data-linenumber="7">
+            <span class="hits">24</span>
             
 
             
@@ -1587,8 +1816,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="27">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="27">
+            <span class="hits">6</span>
             
 
             
@@ -1631,8 +1860,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="31">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="4" data-linenumber="31">
+            <span class="hits">4</span>
             
 
             
@@ -2047,8 +2276,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="13" data-linenumber="6">
-            <span class="hits">13</span>
+          <li class="covered" data-hits="16" data-linenumber="6">
+            <span class="hits">16</span>
             
 
             
@@ -2058,8 +2287,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="13" data-linenumber="7">
-            <span class="hits">13</span>
+          <li class="covered" data-hits="16" data-linenumber="7">
+            <span class="hits">16</span>
             
 
             
@@ -2157,8 +2386,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="16">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="3" data-linenumber="16">
+            <span class="hits">3</span>
             
 
             
@@ -2483,8 +2712,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="5">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="27" data-linenumber="5">
+            <span class="hits">27</span>
             
 
             
@@ -2494,8 +2723,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="6">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="27" data-linenumber="6">
+            <span class="hits">27</span>
             
 
             
@@ -2505,8 +2734,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="7">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="27" data-linenumber="7">
+            <span class="hits">27</span>
             
 
             
@@ -2703,8 +2932,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="25">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="11" data-linenumber="25">
+            <span class="hits">11</span>
             
 
             
@@ -2714,8 +2943,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="26">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="11" data-linenumber="26">
+            <span class="hits">11</span>
             
 
             
@@ -2725,8 +2954,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="27">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="11" data-linenumber="27">
+            <span class="hits">11</span>
             
 
             
@@ -2736,8 +2965,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="28">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="11" data-linenumber="28">
+            <span class="hits">11</span>
             
 
             
@@ -3066,8 +3295,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="27" data-linenumber="58">
-            <span class="hits">27</span>
+          <li class="covered" data-hits="33" data-linenumber="58">
+            <span class="hits">33</span>
             
 
             
@@ -3077,8 +3306,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="59">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="30" data-linenumber="59">
+            <span class="hits">30</span>
             
 
             
@@ -4495,6 +4724,433 @@
             
 
             <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="8d36e3f6a790af4c56763426e7364432a750165c">
+  <div class="header">
+    <h3>spec/command/search_books_by_title_command_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>24</b> relevant lines.
+      <span class="green"><b>24</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;./app/command/search_books_by_title_command&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe FindBookCommand do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:title_to_be_searched) { &#39;Harry Potter&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:first_isbn) { &#39;9780747532743&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:first_title) { &#39;Harry Potter 1&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="7">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:first_author) { [&#39;J. K. Rowling&#39;] }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="8">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:second_isbn) { &#39;9780747532826&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="9">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:second_title) { &#39;Clean Code&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="10">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:second_author) { [&#39;Robert Cecil Martin&#39;] }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:first_book) { Book.new(first_isbn, first_title, first_author) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="12">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:second_book) { Book.new(second_isbn, second_title, second_author) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="13">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:first_shelf) { Shelf.new(1, 1, 1) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="14">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:second_shelf) { Shelf.new(1, 1, 2) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="15">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:third_shelf) { Shelf.new(1, 1, 3) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="16">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:first_book_shelf) { BookShelf.new(first_shelf, first_book) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="17">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:second_book_shelf) { BookShelf.new(second_shelf, second_book) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="18">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  let(:third_book_shelf) { BookShelf.new(third_shelf, first_book) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  context &#39;execute&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;should print filtered list of book if book title is found&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">      args = {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        &quot;shelves&quot; =&gt; [</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">          first_book_shelf, second_book_shelf, third_book_shelf</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">        ],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">        &quot;book_title&quot; =&gt; title_to_be_searched</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">      }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      search_books_by_title_command = SearchBooksByTitleCommand.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      actual = search_books_by_title_command.execute(args)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expectation = [&quot;010101: #{first_isbn} | #{first_title} | #{first_author.join(&#39;, &#39;)}&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">                     &quot;010103: #{first_isbn} | #{first_title} | #{first_author.join(&#39;, &#39;)}&quot;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(actual).to eq(expectation)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
