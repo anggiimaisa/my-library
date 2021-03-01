@@ -12,7 +12,7 @@ describe PutBookCommand do
   let(:filled_book_shelf) { BookShelf.new(first_shelf, book) }
 
   context 'execute' do
-    it 'should print book located address if shelf is still available' do
+    it 'should return book located address if shelf is still available' do
       args = {
         "shelves" => [
           empty_book_shelf
@@ -23,7 +23,7 @@ describe PutBookCommand do
       actual = allocate_book_command.execute(args)
       expect(actual).to eq("Allocated address: #{slot_id}")
     end
-    it 'should print shelves are full if shelf is not available' do
+    it 'should return shelves are full if shelf is not available' do
       args = {
         "shelves" => [
           filled_book_shelf
