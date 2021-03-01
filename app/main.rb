@@ -1,10 +1,6 @@
 require './app/model/library'
 require './app/command/executor'
 
-def new_line
-  25.times{ puts "" }
-end
-
 executor = Executor.new
 
 loop do
