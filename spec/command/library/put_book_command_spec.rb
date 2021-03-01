@@ -21,7 +21,7 @@ describe PutBookCommand do
       }
       allocate_book_command = PutBookCommand.new
       actual = allocate_book_command.execute(args)
-      expect(actual).to eq("Allocated address: #{slot_id}")
+      expect(actual['message']).to eq("Allocated address: #{slot_id}")
     end
     it 'should return shelves are full if shelf is not available' do
       args = {
@@ -32,7 +32,7 @@ describe PutBookCommand do
       }
       allocate_book_command = PutBookCommand.new
       actual = allocate_book_command.execute(args)
-      expect(actual).to eq('All shelves are full!')
+      expect(actual['message']).to eq('All shelves are full!')
     end
   end
 end

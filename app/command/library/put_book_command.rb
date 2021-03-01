@@ -8,9 +8,9 @@ class PutBookCommand < Command
     shelves.each do |book_shelf|
       if book_shelf.book.empty?
         book_shelf.book = book
-        return "Allocated address: #{book_shelf.shelf.print}"
+        return { 'message' => "Allocated address: #{book_shelf.shelf.print}" }
       end
     end
-    return 'All shelves are full!'
+    { 'message' => 'All shelves are full!' }
   end
 end
