@@ -1,3 +1,12 @@
+require './app/command/library/find_book_command'
+require './app/command/library/build_library_command'
+require './app/command/library/list_book_command'
+require './app/command/library/put_book_command'
+require './app/command/library/take_book_command'
+require './app/command/library/search_books_by_author_command'
+require './app/command/library/search_books_by_title_command'
+require './app/factory/arg_library_factory'
+
 class Executor
   def initialize
     @commands = Hash.new
@@ -9,7 +18,9 @@ class Executor
     @commands['search_books_by_title'] = SearchBooksByTitleCommand.new
     @commands['search_books_by_author'] = SearchBooksByAuthorCommand.new
   end
-  def execute(command, args)
+  def execute(command, param)
+    arg_library_factory = ArgLibraryFactory.new_arg(command)
+    args = arg_library_factory.get(param)
     @commands[command].execute(args)
   end
 end
