@@ -10,7 +10,7 @@ describe ListBookCommand do
   let(:second_shelf) { Shelf.new(1, 1, 2) }
 
   context 'execute' do
-    it 'should print list of book' do
+    it 'should return list of book' do
       library = [
         BookShelf.new(first_shelf, book),
         BookShelf.new(second_shelf, book)
