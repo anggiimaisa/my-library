@@ -34,6 +34,7 @@ class Shelf
     return false if @shelf_id.nil?
     return false if @shelf_id.eql? ''
     return false if @shelf_id.to_i > 99
+    return false if @shelf_id.to_i < 1
 
     true
   end
@@ -42,6 +43,7 @@ class Shelf
     return false if @row_id.nil?
     return false if @row_id.eql? ''
     return false if @row_id.to_i > 99
+    return false if @row_id.to_i < 1
 
     true
   end
@@ -50,6 +52,7 @@ class Shelf
     return false if @column_id.nil?
     return false if @column_id.eql? ''
     return false if @column_id.to_i > 99
+    return false if @column_id.to_i < 1
 
     true
   end

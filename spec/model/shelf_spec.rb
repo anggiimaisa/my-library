@@ -15,6 +15,10 @@ describe Shelf do
         shelf = Shelf.new('1', '201', '1')
         expect(shelf.valid?).to eq(false)
       end
+      it 'should return false if shelf attribute less than 1' do
+        shelf = Shelf.new('1', '1', '0')
+        expect(shelf.valid?).to eq(false)
+      end
     end
   end
   context 'print' do
