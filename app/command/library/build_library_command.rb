@@ -1,4 +1,6 @@
 require './app/command/command'
+require './app/model/book_shelf'
+require './app/model/shelf'
 
 class BuildLibraryCommand < Command
   def execute(args)
