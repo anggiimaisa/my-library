@@ -1,4 +1,5 @@
 require './app/command/command'
+require './app/adapter/slot_id_to_shelf_adapter'
 
 class TakeBookCommand < Command
   def execute(args)
