@@ -20,7 +20,7 @@ describe FindBookCommand do
       }
       find_book_command = FindBookCommand.new
       actual = find_book_command.execute(args)
-      expect(actual).to eq("Found the book at 010101")
+      expect(actual['message']).to eq("Found the book at 010101")
     end
     it 'should print book not found if book isbn is not found' do
       args = {
@@ -31,7 +31,7 @@ describe FindBookCommand do
       }
       find_book_command = FindBookCommand.new
       actual = find_book_command.execute(args)
-      expect(actual).to eq("Book not found!")
+      expect(actual['message']).to eq("Book not found!")
     end
   end
 end
