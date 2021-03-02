@@ -20,5 +20,13 @@ describe ListBookCommand do
       expectation = ["010101: #{isbn} | #{title} | #{author.join(', ')}", "010102: #{isbn} | #{title} | #{author.join(', ')}"]
       expect(actual['message']).to eq(expectation)
     end
+    it 'should return message there is no book if the library is empty' do
+      library = [
+      ]
+      list_book_command = ListBookCommand.new
+      actual = list_book_command.execute(library)
+      expectation = 'There is no book added'
+      expect(actual['message']).to eq(expectation)
+    end
   end
 end
