@@ -18,14 +18,14 @@ class BuildLibraryCommand < Command
     message = Array.new
     shelf_size = Shelf.new(total_shelf, total_row, total_column)
     if shelf_size.valid?
-      for shelf in 1..total_shelf
-        for row in 1..total_row
-          for column in 1..total_column
+      (1..total_shelf).each { |shelf|
+        (1..total_row).each { |row|
+          (1..total_column).each { |column|
             Library.instance.add(Shelf.new(shelf, row, column))
-          end
-        end
+          }
+        }
         message << "Shelf #{shelf} with #{total_row} rows and #{total_column} columns is added"
-      end
+      }
       return {
         'message' => message,
         'status' => true
