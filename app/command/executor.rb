@@ -19,8 +19,12 @@ class Executor
     @commands['search_books_by_author'] = SearchBooksByAuthorCommand.new
   end
   def execute(command, param)
-    arg_library_factory = ArgLibraryFactory.new_arg(command)
-    args = arg_library_factory.get(param)
-    @commands[command].execute(args)
+    if @commands.has_key?(command)
+      arg_library_factory = ArgLibraryFactory.new_arg(command)
+      args = arg_library_factory.get(param)
+      @commands[command].execute(args)
+    else
+      { 'message' => "Program cannot recognize #{command} command" }
+    end
   end
 end
