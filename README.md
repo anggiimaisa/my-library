@@ -28,6 +28,5 @@ list_books
 search_books_by_title|Harry Potter
 search_books_by_author|Kent Beck
 search_books_by_author|Tolkien
-Book not found!
 exit
 ```
